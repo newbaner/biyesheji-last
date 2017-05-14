@@ -1,0 +1,213 @@
+ 
+body{
+	position: relative;
+}
+/*头部显示城市*/
+#citybox{
+	width: 1.0rem;
+}
+section{
+	flex: 1;
+	background: #fff;
+	margin: 0.1rem 0.1rem 0 0.1rem;
+	border-radius:0.1rem;
+	height: auto;
+	overflow-y: auto;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+#walkinfo{
+	position: fixed;
+    background-color: #fff;
+    overflow-y: auto;
+    top: 0.76rem;
+    left: 10px;
+    width: 50%;
+    max-height: 80%;
+    height: auto;
+    z-index: 999;
+    opacity: 0.9;
+    border-radius: 0.08rem;
+    color: #0086B3;
+    display: none;
+}
+.pathnav_title{
+	height: 0.4rem;
+	border-bottom: 1px solid #dedede;
+	background: #F5F5F5;
+	text-align: center;
+}
+#walkinfo span{
+	color: #55A532;
+	line-height: 0.35rem;
+}
+#fold{
+	width: 0.4rem;
+	height: 0.4rem;
+	border-radius: 0.2rem;
+	position: fixed;
+	right: 0.2rem;
+	bottom: 0.45rem;
+	background: url(../img/up.png) no-repeat;
+	/*display: none;*/
+	z-index: 1000;
+}
+#map{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 999;
+	bottom: 0;
+}
+/*在地图下面显示具体的商家信息*/
+#shop_show{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px 5px 0 0;
+	border-top: 2px solid #55A532;
+	display: block;
+	position: absolute;
+	z-index: 999;
+	bottom: 0;
+	background: #FFFDEF;
+	
+}
+#shop_show #shop_name{
+	height: 0.35rem;
+	line-height: 0.35rem;
+	color: #424542;
+	font-size: 0.18rem;
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+}
+#shop_name #unfold{
+	position: absolute;
+	right: 0.16rem;
+}
+#shop_img{
+	height: 2.0rem;
+	display: flex;
+	justify-content: center;
+}
+#shop_img img{
+	height: 100%;
+}
+#textInfo{
+	height: 60%;
+}
+#textInfo p{
+	/*height: 0.5rem;*/
+	flex-shrink: 1;
+	line-height: 0.31rem;
+	
+}
+#textInfo p span{
+	padding: 0.13rem;
+	width:0.80rem;
+	display: inline-block;
+	color: #737173;
+}
+#textInfo p b{
+	font-size: 0.16rem;
+	color: #4a494a;
+}
+/*#textInfo p:nth-child(2){
+	display: flex;
+	justify-content: left;
+	
+}
+#textInfo p:nth-child(3){
+	display: flex;
+	justify-content: left;
+	
+}
+*/
+#textInfo #score i{
+	color:#ced7d6 ;
+}
+footer ul:nth-child(1) li a{
+	color:#a2e34d;
+}
+/*信息框*/
+.info{
+	  border: solid 1px silver;
+	 
+}
+.info-top{
+	   position: relative;
+	   background: none repeat scroll 0 0 #F9F9F9;
+	   border-bottom: 1px solid #CCC;
+	   border-radius: 0.1rem 0.1rem 0 0;
+	   color: #1296db;
+	   font-weight: bold;
+	   outline: none;
+}
+.info-top div {
+        display: inline-block;
+       
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 31px;
+        padding: 0 10px;
+ }
+.info-top img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition-duration: 0.25s;
+ }
+ .info-top img:hover {
+    box-shadow: 0px 0px 5px #000;
+}
+.info-middle {
+    font-size: 12px;
+    padding: 6px;
+    line-height: 20px;
+    color:#1296db ;
+}
+.info-middle a{
+	display: inline-block;
+	color:#1296db;
+	width: 30px;
+	height: 30px;
+	margin:0 30px;
+	text-align: center;
+}
+.info-middle a i{
+	font-size: 30px;
+}
+.info-middle a:hover{
+	color: #A2E34D;
+}
+.info-bottom {
+        height: 0px;
+        width: 100%;
+        clear: both;
+        text-align: center;
+}
+.info-bottom img {
+    position: relative;
+    z-index: 104;
+}
+
+.foodlists{
+	width: 100%;
+	height: 100%;
+    position: absolute;
+    background: #fff;
+	left:0;
+	top: 0	;
+	z-index:1200; 
+}
+.popup{
+	z-index: 1210!important;
+}
+.backdrop{
+	z-index: 1205;
+}
+.popup-showing{
+	z-index: 1220;
+}
